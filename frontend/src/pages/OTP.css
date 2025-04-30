@@ -1,0 +1,64 @@
+/* Futuristic background */
+.otp-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Animate background */
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Glassy card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    color: white;
+  }
+  
+  /* Title text */
+  .futuristic-title {
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  /* Futuristic input field */
+  .futuristic-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #00ffff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .futuristic-input::placeholder {
+    color: #ccc;
+  }
+  
+  /* Futuristic Button */
+  .futuristic-btn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    transition: 0.4s;
+  }
+  
+  .futuristic-btn:hover {
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    box-shadow: 0 0 20px #ff00ff;
+    transform: scale(1.05);
+  }
+  

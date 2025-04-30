@@ -1,0 +1,82 @@
+/* Futuristic background */
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Moving background animation */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Glassmorphism effect */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* Input styling */
+  .futuristic-input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    color: white;
+  }
+  
+  .futuristic-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .futuristic-input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+    color: white;
+  }
+  
+  /* Label styling */
+  .futuristic-label {
+    color: #00ffff;
+  }
+  
+  /* Title */
+  .futuristic-title {
+    color: white;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  /* Futuristic Button */
+  .futuristic-btn {
+    background: linear-gradient(45deg, #00ffff, #0066ff);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    transition: 0.4s;
+  }
+  
+  .futuristic-btn:hover {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    box-shadow: 0 0 20px #00ffff;
+    transform: scale(1.05);
+  }
+  
+  /* Link */
+  .futuristic-link {
+    color: #00ffff;
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+  
+  .futuristic-link:hover {
+    color: #ff00ff;
+  }
+  
